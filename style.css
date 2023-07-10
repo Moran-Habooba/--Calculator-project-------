@@ -78,3 +78,86 @@ body {
   color: rgb(12, 12, 12);
   font-weight: 600;
 }
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  .calculator-grid {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(4, 100px);
+    margin: 5px;
+    display: block;
+  }
+
+  .calculator-grid button {
+    font-size: 1.5rem;
+    width: 80px;
+    height: 80px;
+  }
+
+  .output {
+    padding: 20px;
+    margin: 5px;
+  }
+
+  .output .previous-screen {
+    font-size: 1rem;
+  }
+
+  .output .current-screen {
+    font-size: 1.8rem;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+
+  .calculator-grid {
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+
+  .buttons {
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(4, 100px);
+    margin: 10px;
+  }
+
+  .calculator-grid button {
+    font-size: 2rem;
+  }
+
+  .output {
+    padding: 30px;
+    margin: 10px;
+  }
+
+  .output .previous-screen {
+    font-size: 1.2rem;
+  }
+
+  .output .current-screen {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  /* עיצוב נוסף לטאבלטים */
+}
